@@ -31,15 +31,13 @@ void setup() {
 
   // initialize the Bluetooth® Low Energy hardware
   BLE.begin();
-
   Serial.println("Bluetooth® Low Energy Central - LED control");
-
 
   //-------- for getting neutral reading for calibration  ----------------
   //make sure the joystick is not touched when the program starts
   LR_neutral = analogRead(LRpin);
   UD_neutral = analogRead(UDpin);
-
+ //-------- for getting neutral reading for calibration  ----------------
 }
 
 void loop() {

@@ -43,9 +43,6 @@ void setup() {
   // add service
   BLE.addService(motorControlService);
 
-  // set the initial value for the characeristic:
-//  motorControlService.writeValue(0);
-
   // start advertising
   BLE.advertise();
 
@@ -126,5 +123,4 @@ void loop() {
       Serial.print("Disconnected from central: ");
       Serial.println(central.address());
       delay(500);
-  
 }
